@@ -1,0 +1,85 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+:root {
+  --primary-color: #2b5870;
+  --box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  --btn: rgb(105, 104, 104);
+  --cold: #035aa6;
+  --hot: #ff5200;
+  --neutral: rgb(184, 184, 184);
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  background: var(--primary-color);
+  width: 300px;
+  height: 400px;
+  border-radius: 5%;
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.temperature-display-container {
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature-display {
+  height: 220px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 48px;
+  border: 4px #ffffff solid;
+  position: absolute;
+  top: 30px;
+
+  color: #ffff;
+  text-transform: uppercase;
+  background-color: var(--neutral);
+}
+
+.btn {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  z-index: 0;
+  border-radius: 100px;
+  height: 80px;
+  width: 80px;
+  font-size: 20;
+  color: #ffffff;
+  background: rgb(105, 104, 104);
+  border: 2px #ffffff solid;
+}
+
+.btn2 {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  z-index: 0;
+  border-radius: 100px;
+  height: 80px;
+  width: 80px;
+  font-size: 20;
+  color: #ffffff;
+  background: rgb(105, 104, 104);
+  border: 2px #ffffff solid;
+}
